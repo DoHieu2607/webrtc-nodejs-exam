@@ -1,6 +1,6 @@
 // Config variables: change them to point to your own servers
-// const SIGNALING_SERVER_URL = "http://192.168.1.165:9999";
-const SIGNALING_SERVER_URL = "http://localhost:9999";
+const SIGNALING_SERVER_URL = "http://192.168.1.107:9999";
+// const SIGNALING_SERVER_URL ="http://localhost:9999"
 const TURN_SERVER_URL = "localhost:3478";
 const TURN_SERVER_USERNAME = "username";
 const TURN_SERVER_CREDENTIAL = "credential";
