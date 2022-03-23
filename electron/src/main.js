@@ -132,5 +132,6 @@ var stats = new Stats();
 document.body.appendChild(stats.dom);
 requestAnimationFrame(function loop() {
   stats.update();
+  console.log(stats.getFps());
   requestAnimationFrame(loop);
 });
