@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "npx electron .",
-    "build_win": "npx electron-packager . test --platform=win32 --arch=x64",
+    "build_win": "npx electron-packager . videocallwebrtc --platform=win32 --arch=x64",
+    "build_mac": "npx electron-packager . videocallwebrtc --platform=darwin",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
