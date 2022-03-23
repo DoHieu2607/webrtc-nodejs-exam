@@ -1,12 +1,15 @@
 {
-  "dependencies": {
-    "electron": "^17.1.2"
-  },
+  "dependencies": {},
   "name": "web",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "electron": "^17.1.2",
+    "electron-packager": "^15.4.0"
+  },
   "scripts": {
+    "start": "npx electron .",
+    "build_win": "npx electron-packager . test --platform=win32 --arch=x64",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
