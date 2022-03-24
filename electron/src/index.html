@@ -5,29 +5,24 @@
     <meta charset="UTF-8">
     <title>WebRTC working example</title>
 
-    <style>
-        #remoteStream {
-            background-color: gray;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        #localStream {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            border-radius: 10px;
-            max-height: 200px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <video id="remoteStream" autoplay playsinline></video>
-    <video id="localStream" autoplay playsinline></video>
+    <div class="video-container">
+        <video id="remoteStream" autoplay playsinline></video>
+        <video id="localStream" autoplay playsinline></video>
+    </div>
+
+    <div class="button-container">
+        <button><i class="fa-solid fa-video fa-xl"></i></button>
+        <button><i class="fa-solid fa-microphone fa-xl"></i></button>
+        <button><i class="fa-solid fa-crop-simple fa-xl"></i></button>
+        <button class="red"><i class="fa-solid fa-phone-slash fa-xl"></i></button>
+    </div>
 
     <script src="../libs/socket.io.js"></script>
     <script src="../libs/stats.js"></script>

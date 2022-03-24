@@ -1,9 +1,9 @@
 // Config variables: change them to point to your own servers
-const SIGNALING_SERVER_URL = "http://192.168.1.107:9999";
-// const SIGNALING_SERVER_URL ="http://localhost:9999"
-const TURN_SERVER_URL = "localhost:3478";
+const SIGNALING_SERVER_URL = "http://192.168.106.100:3421";
+const TURN_SERVER_URL = "192.168.106.100:3420";
 const TURN_SERVER_USERNAME = "username";
 const TURN_SERVER_CREDENTIAL = "credential";
+
 // WebRTC config: you don't have to change this for the example to work
 // If you are testing on localhost, you can just use PC_CONFIG = {}
 const PC_CONFIG = {
@@ -132,6 +132,6 @@ var stats = new Stats();
 document.body.appendChild(stats.dom);
 requestAnimationFrame(function loop() {
   stats.update();
-  console.log(stats.getFps());
+  // console.log(stats.getFps());
   requestAnimationFrame(loop);
 });

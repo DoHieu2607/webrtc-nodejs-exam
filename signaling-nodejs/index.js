@@ -23,5 +23,5 @@ io.on("connection", (socket) => {
   });
 });
 
-io.listen(9999);
-console.log("Listening at *:9999");
+io.listen(3421);
+console.log("Listening at *:3421");
